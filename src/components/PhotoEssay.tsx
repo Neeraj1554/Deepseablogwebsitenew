@@ -1,9 +1,7 @@
 import { motion } from "motion/react";
 import { X } from "lucide-react";
 import anglerFish from "../Images/Angler-fish.jpg";
-import AUVScanning from "../Images/AUV-scanning.png";
 import deepPressure from "../Images/Deep-pressure.png";
-import deepSea from "../Images/deep-sea.jpg";
 import ghostShip from "../Images/ghost-ship.jpg";
 import gravityMapping from "../Images/gravity-mapping.png";
 import jellyfishForest from "../Images/jellyfish-forest.jpg";
@@ -14,10 +12,10 @@ import lostCity from "../Images/lost-city.jpeg.jpg";
 import marsOcean from "../Images/Mars-Ocean.png";
 import seabed2030 from "../Images/Seabed-2030.png";
 import sonarSlow from "../Images/Sonar-slow.png";
-import starrySky from "../Images/starry-sky.jpg";
 import thalassophobia from "../Images/Thalassophobia.jpg";
 import titanicWreck from "../Images/titanic-wreck.jpg";
 import Mirror from "../Images/mirror.jpg";
+import Mapping from "../Images/AI-ocean.png";
 interface PhotoEssayProps {
   onClose: () => void;
 }
@@ -197,7 +195,7 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
             {/* Science Image 4 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
               <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
-                <img src={} className="w-full h-full object-cover" />
+                <img src={deepPressure} className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Deep Pressure vs Space</h3>
               <p className="text-blue-100/70">At Titanic depth, pressure crushes metal instantly. The ocean is harsher than space.</p>
@@ -221,15 +219,6 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
               <p className="text-blue-100/70">Sonar scans the seafloor one thin slice at a time. Mapping this way takes decades.</p>
             </div>
 
-            {/* Science Image 7 */}
-            <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
-                <img src={AUVScanning} alt="AUVs performing grid scanning" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="text-xl text-white mb-2">Autonomous Ocean Robots</h3>
-              <p className="text-blue-100/70">New robots map the ocean continuously—perfect workers for the abyss.</p>
-            </div>
-
             {/* Science Image 8 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
               <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
@@ -239,19 +228,10 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
               <p className="text-blue-100/70">In 2017, only 6% was mapped. As of 2025, we've reached ~26% high-resolution mapping.</p>
             </div>
 
-            {/* Science Image 9 */}
-            <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
-                <img src={} alt="Rugged underwater mountains and ravines" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="text-xl text-white mb-2">MH370 Terrain Discovery</h3>
-              <p className="text-blue-100/70">The search revealed a landscape no one knew existed—proof of how incomplete our maps are.</p>
-            </div>
-
             {/* Science Image 10 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
               <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
-                <img src={} alt="AI-guided underwater drone" className="w-full h-full object-cover" />
+                <img src={Mapping} alt="AI-guided underwater drone" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Future of Mapping — AI</h3>
               <p className="text-blue-100/70">Next-gen AUVs will detect unusual shapes automatically, speeding up exploration dramatically.</p>
